@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBA Advisory LLC | Strategic Execution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        slate: {
+                            850: '#151e2e',
+                            900: '#0f172a',
+                        },
+                        navy: {
+                            900: '#0a192f',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-slate-200">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/50 transition-all duration-300 shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="w-10 h-10 bg-slate-900 rounded flex items-center justify-center mr-3">
+                        <span class="text-white font-bold tracking-wider text-sm">EBA</span>
+                    </div>
+                    <span class="font-semibold text-lg tracking-wide text-slate-900">Advisory LLC</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#philosophy" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">What We Do</a>
+                    <a href="#pillars" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Our Focus</a>
+                    <a href="#process" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">How We Operate</a>
+                    <a href="#about" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Who We Are</a>
+                    <a href="#jobs" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Join Us</a>
+                    <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#philosophy" class="block px-3 py-2 text-base font-medium text-slate-600">What We Do</a>
+                <a href="#pillars" class="block px-3 py-2 text-base font-medium text-slate-600">Our Focus</a>
+                <a href="#process" class="block px-3 py-2 text-base font-medium text-slate-600">How We Operate</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-slate-600">Who We Are</a>
+                <a href="#jobs" class="block px-3 py-2 text-base font-medium text-slate-600">Join Us</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-slate-900">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl fade-in-up">
+                <p class="text-sm font-semibold tracking-widest text-slate-500 uppercase mb-4">Our Approach</p>
+                <h1 class="text-5xl lg:text-6xl font-light text-slate-900 leading-[1.1] tracking-tight mb-8">
+                    We evaluate, identify value, and build executable plans for <span class="font-semibold">results.</span>
+                </h1>
+                <p class="text-xl text-slate-600 leading-relaxed mb-10 max-w-2xl">
+                    Engaged by boards and executive teams, we exist to address critical business challenges, identify strategy, and forge the execution plans that will deliver desired results.
+                </p>
+                <a href="#philosophy" class="inline-flex items-center text-slate-900 font-medium hover:text-slate-600 transition-colors">
+                    Understand our philosophy 
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do / Philosophy Section -->
+    <section id="philosophy" class="py-24 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <div class="lg:col-span-4">
+                    <h2 class="text-3xl font-light text-slate-900 mb-4">What We Do</h2>
+                    <p class="text-slate-500 leading-relaxed">Our focus is agnostic to specific industries. We specialize in universal business drivers: people, processes, and technology.</p>
+                </div>
+                <div class="lg:col-span-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <div class="w-12 h-12 bg-slate-50 rounded-lg flex items-center justify-center mb-6 border border-slate-100">
+                                <svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-medium text-slate-900 mb-3">Validation & Fit</h3>
+                            <p class="text-slate-600 leading-relaxed">We engage the necessary SMEs at the client or bring in outside experts, meticulously validating that every individual is the absolute right fit for the client strategy.</p>
+                        </div>
+                        <div>
+                            <div class="w-12 h-12 bg-slate-50 rounded-lg flex items-center justify-center mb-6 border border-slate-100">
+                                <svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-medium text-slate-900 mb-3">Private by Design</h3>
+                            <p class="text-slate-600 leading-relaxed">We do not share any client information. Privacy is paramount. Our practice operates in strict confidence.</p>
+                        </div>
+                        <div>
+                            <div class="w-12 h-12 bg-slate-50 rounded-lg flex items-center justify-center mb-6 border border-slate-100">
+                                <svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-medium text-slate-900 mb-3">Aligned Incentives</h3>
+                            <p class="text-slate-600 leading-relaxed">We work primarily through referrals. Sharing in the returns of efficiency or growth is a common model for us, and we frequently take on pro bono engagements for the right fit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pillars Section -->
+    <section id="pillars" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-light mb-6">The Three Business Pillars</h2>
+                <p class="text-slate-400 text-lg">Our evaluation and execution strategies are rooted in mastering the core foundations of any successful business.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Tech -->
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700/50 hover:bg-slate-800 transition-colors">
+                    <div class="w-12 h-12 bg-slate-700/50 rounded flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Technology</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        A scalable enabler. We focus on aligning tech stacks precisely with strategic goals, eliminating redundancies, and ensuring systems generate measurable value and operational agility.
+                    </p>
+                </div>
+                
+                <!-- People -->
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700/50 hover:bg-slate-800 transition-colors">
+                    <div class="w-12 h-12 bg-slate-700/50 rounded flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">People Organization</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        A strategy is only as robust as the executing team. We design empowered, accountable organizational structures. By rigorously validating talent and aligning roles with outcomes, we promote cultures that drive the strategy forward organically.
+                    </p>
+                </div>
+
+                <!-- Operations -->
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700/50 hover:bg-slate-800 transition-colors">
+                    <div class="w-12 h-12 bg-slate-700/50 rounded flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Operations Excellence</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        Execution requires effective and efficient workflows. We dive deep into operational mechanics to streamline processes, eliminate waste, and foster measurable improvement. The result is a profitable, customer-centric execution engine.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Operate & Who We Are Section -->
+    <section id="process" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <div>
+                    <h2 class="text-3xl font-light text-slate-900 mb-6">How We Operate</h2>
+                    <p class="text-lg text-slate-600 mb-10">We believe in deliberate disruption. Our process is methodical, beginning with deep comprehension and culminating in rigorous client-led execution.</p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex">
+                            <div class="flex-shrink-0 mr-6">
+                                <div class="w-10 h-10 rounded-full border border-slate-300 flex items-center justify-center text-slate-500 font-semibold text-sm">01</div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-medium text-slate-900 mb-2">Listen</h4>
+                                <p class="text-slate-600 text-sm leading-relaxed">We listen to expectations first. This is deliberately our longest phase. Understanding the true root of the challenge is critical before we can offer effective help.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 mr-6">
+                                <div class="w-10 h-10 rounded-full border border-slate-300 flex items-center justify-center text-slate-500 font-semibold text-sm">02</div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-medium text-slate-900 mb-2">Map</h4>
+                                <p class="text-slate-600 text-sm leading-relaxed">We map the path to the desired state into a definitive plan that will lead to desired results. This includes "start, stop, and improve" chapters covering all three pillars: technology, people, and processes.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 mr-6">
+                                <div class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-white font-semibold text-sm">03</div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-medium text-slate-900 mb-2">Execute</h4>
+                                <p class="text-slate-600 text-sm leading-relaxed">The client executes to the plan. This is an integral part of the success. We remain engaged to ensure alignment, but internal ownership drives the win.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 lg:sticky lg:top-28" id="about">
+                    <h3 class="text-2xl font-light text-slate-900 mb-6">Who We Are & Why We Exist</h3>
+                    <div class="space-y-6">
+                        <p class="text-slate-600 leading-relaxed">
+                            <strong class="text-slate-900 font-medium">The Team:</strong> We are a flexible team spread over the globe. Coming from diverse industry backgrounds, we share a highly effective delivery track record ranging from high-growth startups to global name brands.
+                        </p>
+                        <hr class="border-slate-100">
+                        <p class="text-slate-600 leading-relaxed">
+                            <strong class="text-slate-900 font-medium">The Mission:</strong> We are not a non-profit, but our main stakeholders are not interested in building a career or seeking name recognition. We exist because we are obsessed with our mission: 
+                        </p>
+                        <blockquote class="pl-4 border-l-2 border-slate-900 text-slate-800 font-medium italic">
+                            "To spread effective and efficient business practices that are customer-centric while being highly profitable to our clients."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section id="jobs" class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-light text-slate-900 mb-4">Opportunities</h2>
+                <p class="text-slate-500">Join a network of professionals committed to delivering unmatched value.</p>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-8 hover:shadow-md transition-shadow">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-slate-900">Fractional Referral Partner</h3>
+                        <p class="text-slate-600 mt-1">Part-Time / Remote</p>
+                    </div>
+                    <div class="mt-4 md:mt-0 px-4 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
+                        High Profit Sharing
+                    </div>
+                </div>
+                
+                <div class="prose prose-slate max-w-none text-slate-600 mb-8 text-sm">
+                    <p class="mb-4">
+                        As a non-traditional team, we rely on strategic relationships and high-level introductions. We are seeking a well-connected, Fractional Referral Partner who understands how to navigate different executive levels including C-suites and boardrooms.
+                    </p>
+                    <p class="mb-4">
+                        You will not be pushing products. You will be identifying organizations that face complex strategic or operational hurdles and introducing them to our unique, results-based advisory model. 
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 mb-4">
+                        <li>Highly autonomous, part-time engagement.</li>
+                        <li>Targeting executive teams and boards seeking operational, technological, or organizational turnaround.</li>
+                        <li>Extremely lucrative, high-commission structure on closed engagements.</li>
+                        <li>Ideal for industry veterans, retired executives, or well-networked fractional professionals.</li>
+                    </ul>
+                </div>
+                
+                <a href="mailto:contact@eba.net?subject=Partner" class="inline-block bg-slate-900 text-white px-6 py-3 rounded text-sm font-medium hover:bg-slate-800 transition-colors">
+                    Inquire About Role
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-light text-slate-900 mb-4">Get in Touch</h2>
+                <p class="text-slate-500">Fill out the form below to send an email directly to <span class="font-medium text-slate-800">contact@eba.net</span>.</p>
+            </div>
+
+            <form action="mailto:contact@eba.net" method="POST" enctype="text/plain" class="bg-slate-50 border border-slate-200 rounded-xl p-8 space-y-6 shadow-sm">
+                <!-- Hidden input to default the subject when submitted via mail client -->
+                <input type="hidden" name="subject" value="Contact">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-slate-700 mb-2">Your Name</label>
+                    <input type="text" id="name" name="Name" required class="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-900 focus:border-slate-900 outline-none transition-colors" placeholder="John Doe">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Your Email</label>
+                    <input type="email" id="email" name="Email" required class="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-900 focus:border-slate-900 outline-none transition-colors" placeholder="john@example.com">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Message</label>
+                    <textarea id="message" name="Message" rows="5" required class="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-900 focus:border-slate-900 outline-none transition-colors" placeholder="How can we help your organization?"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="w-full bg-slate-900 text-white font-medium py-3 px-6 rounded-lg hover:bg-slate-800 transition-colors">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 py-12 text-center text-slate-400 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-center mb-6 opacity-50 grayscale">
+                 <div class="w-8 h-8 bg-white rounded flex items-center justify-center mr-2">
+                    <span class="text-slate-900 font-bold tracking-wider text-xs">EBA</span>
+                </div>
+                <span class="font-medium text-white tracking-wide">Advisory LLC</span>
+            </div>
+            <p class="text-sm mb-4">&copy; <span id="year"></span> EBA Advisory LLC. All rights reserved. Private by design.</p>
+            <div class="space-x-4 text-sm">
+                <a href="mailto:contact@eba.net?subject=Contact" class="hover:text-white transition-colors">Contact: contact@eba.net</a>
+                <span class="text-slate-700">|</span>
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on click
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Navbar blur effect on scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-sm');
+            } else {
+                navbar.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body>
+</html>
