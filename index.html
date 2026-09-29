@@ -296,34 +296,15 @@
         </div>
     </section>
 
-    <!-- Contact Form Section -->
+    <!-- Contact Section -->
     <section id="contact" class="py-24 bg-white border-t border-slate-100">
-        <div class="max-w-3xl mx-auto px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-light text-slate-900 mb-4">Get in Touch</h2>
-                <p class="text-slate-500">Fill out the form below to send an email directly to <span class="font-medium text-slate-800">contact@eba.net</span>.</p>
-            </div>
-
-            <!-- SECURE FORM HANDLER ENDPOINT (Replace YOUR_FORM_ID with your Formspree ID, or use another static form backend) -->
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="bg-slate-50 border border-slate-200 rounded-xl p-8 space-y-6 shadow-sm">
-                <div>
-                    <label for="name" class="block text-sm font-medium text-slate-700 mb-2">Your Name</label>
-                    <input type="text" id="name" name="Name" required class="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-900 focus:border-slate-900 outline-none transition-colors" placeholder="John Doe">
-                </div>
-                <div>
-                    <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Your Email</label>
-                    <input type="email" id="email" name="Email" required class="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-900 focus:border-slate-900 outline-none transition-colors" placeholder="john@example.com">
-                </div>
-                <div>
-                    <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Message</label>
-                    <textarea id="message" name="Message" rows="5" required class="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-900 focus:border-slate-900 outline-none transition-colors" placeholder="How can we help your organization?"></textarea>
-                </div>
-                <div>
-                    <button type="submit" class="w-full bg-slate-900 text-white font-medium py-3 px-6 rounded-lg hover:bg-slate-800 transition-colors">
-                        Send Message
-                    </button>
-                </div>
-            </form>
+        <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-light text-slate-900 mb-4">Get in Touch</h2>
+            <p class="text-slate-500 mb-8 max-w-xl mx-auto">We operate in strict confidence. Reach out directly to start a conversation regarding your organization's strategy and execution needs.</p>
+            <a href="mailto:contact@eba.net?subject=Inquiry" class="inline-flex items-center justify-center bg-slate-900 text-white font-medium py-4 px-8 rounded-xl hover:bg-slate-800 transition-colors shadow-sm text-lg">
+                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                contact@eba.net
+            </a>
         </div>
     </section>
 
@@ -336,7 +317,8 @@
                 </div>
                 <span class="font-medium text-white tracking-wide">Advisory LLC</span>
             </div>
-            <p class="text-sm mb-4">&copy; <span id="year"></span> EBA Advisory LLC. All rights reserved. Private by design.</p>
+            <p class="text-sm mb-2">&copy; <span id="year"></span> EBA Advisory LLC. All rights reserved. Private by design.</p>
+            <p class="text-xs text-slate-500 mb-4">Version 3.5</p>
             <div class="space-x-4 text-sm">
                 <a href="mailto:contact@eba.net?subject=Contact" class="hover:text-white transition-colors">Contact: contact@eba.net</a>
                 <span class="text-slate-700">|</span>
