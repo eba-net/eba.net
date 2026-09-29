@@ -304,9 +304,8 @@
                 <p class="text-slate-500">Fill out the form below to send an email directly to <span class="font-medium text-slate-800">contact@eba.net</span>.</p>
             </div>
 
-            <form action="mailto:contact@eba.net" method="POST" enctype="text/plain" class="bg-slate-50 border border-slate-200 rounded-xl p-8 space-y-6 shadow-sm">
-                <!-- Hidden input to default the subject when submitted via mail client -->
-                <input type="hidden" name="subject" value="Contact">
+            <!-- SECURE FORM HANDLER ENDPOINT (Replace YOUR_FORM_ID with your Formspree ID, or use another static form backend) -->
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="bg-slate-50 border border-slate-200 rounded-xl p-8 space-y-6 shadow-sm">
                 <div>
                     <label for="name" class="block text-sm font-medium text-slate-700 mb-2">Your Name</label>
                     <input type="text" id="name" name="Name" required class="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-900 focus:border-slate-900 outline-none transition-colors" placeholder="John Doe">
